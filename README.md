@@ -1,5 +1,7 @@
 # my_vue_project
 
+Generating images with random quotes 
+
 ## Project setup
 ```
 npm install
