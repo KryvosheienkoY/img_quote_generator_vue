@@ -59,9 +59,11 @@ async function textOverlay(imgPath) {
                 console.log('w -', w);
                 console.log('textWidth -', textWidth);
                 if (textWidth >= w) {
-                    image.resize(textWidth + 30, h);
+                    image.resize(textWidth + 30,Jimp.AUTO);
                     w = image.bitmap.width;
+                    h = image.bitmap.height;
                     console.log('w -', w);
+                    console.log('h -', h);
                     console.log('textWidth -', textWidth);
                 }
                 let textHight = Jimp.measureTextHeight(font, text);
